@@ -42,7 +42,8 @@ export default class PetitionViewer extends React.Component<IPetitionViewerProps
                 return response.json();
             })
             .then((myJson) => {
-                this.setState({PetitionTitle: myJson.data.attributes.action, PetitionSignatureCount: myJson.data.attributes.signature_count})
+                var sigs = Number(myJson.data.attributes.signature_count).toLocaleString();
+                this.setState({PetitionTitle: myJson.data.attributes.action, PetitionSignatureCount: sigs})
             })
             .catch((error) => {
                 if(this.state.PetitionSignatureCount == "") {
