@@ -1,27 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PetitionSelector from './PetitionSelector';
+import PetitionViewer from './PetitionViewer';
 
-class App extends Component {
+export interface IAppState {
+  PetitionID: String;
+  DisplayCount: boolean;
+}
+
+class App extends React.Component<any, IAppState> {
+  constructor(props: any) {
+    super(props);
+    this.petitionIdSubmitted = this.petitionIdSubmitted.bind(this);
+
+    this.state = {
+        PetitionID: "",
+        DisplayCount: false
+    }
+}
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        {(this.state.DisplayCount) ? undefined : <PetitionSelector submitPetitionID={this.petitionIdSubmitted}/>}
+        {(this.state.DisplayCount) ? <PetitionViewer PetitionID={this.state.PetitionID} /> : undefined }
       </div>
     );
+  }
+
+  private petitionIdSubmitted(petitionID:String)
+  {
+      this.setState({PetitionID: petitionID, DisplayCount: true});
   }
 }
 
