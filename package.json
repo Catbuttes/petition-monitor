@@ -2,6 +2,7 @@
   "name": "petition-monitor",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://catbuttes.gitlab.io/petition-monitor/",
   "dependencies": {
     "@types/jest": "24.0.11",
     "@types/node": "11.11.4",
