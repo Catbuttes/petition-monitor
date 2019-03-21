@@ -7,7 +7,7 @@ pages:
   - yarn install
   script:
   - yarn build
-  - rm -rf public
+  - mv public public.old
   - mv build public
   artifacts:
     paths:
