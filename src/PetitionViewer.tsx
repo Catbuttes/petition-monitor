@@ -26,10 +26,14 @@ export default class PetitionViewer extends React.Component<IPetitionViewerProps
     }
 
     public render() {
+        var baseUrl = 'https://petition.parliament.uk/petitions/'
+        var completeUrl = baseUrl + this.props.PetitionID //stuff
+
         return (
             <div>
                 <h2>{this.state.PetitionTitle}</h2>
                 <h3>{this.state.PetitionSignatureCount} signatures</h3>
+                <a href={completeUrl}>Link to petition</a>
             </div>
         );
     }
