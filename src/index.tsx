@@ -4,7 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let elements = document.getElementsByClassName("PetitionMonitorApp")
+//let elements = document.getElementsByTagName("app")
+
+for (let i = 0; i < elements.length; i++) {
+    const element = elements[i];
+    let attribute = element.getAttribute('defaultPetition')
+    ReactDOM.render(<App defaultPetition={attribute} />, element);
+}
+
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

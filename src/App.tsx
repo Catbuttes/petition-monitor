@@ -3,13 +3,16 @@ import './App.css';
 import PetitionSelector from './PetitionSelector';
 import PetitionViewer from './PetitionViewer';
 
+export interface IAppProps {
+  defaultPetition: String|null;
+}
 export interface IAppState {
   PetitionID: String;
   DisplayCount: boolean;
 }
 
-class App extends React.Component<any, IAppState> {
-  constructor(props: any) {
+class App extends React.Component<IAppProps, IAppState> {
+  constructor(props: IAppProps) {
     super(props);
     this.petitionIdSubmitted = this.petitionIdSubmitted.bind(this);
 
@@ -22,7 +25,7 @@ class App extends React.Component<any, IAppState> {
   render() {
     let search = window.location.search;
     let params = new URLSearchParams(search);
-    let paramPetition = params.get('petition');
+    let paramPetition = this.props.defaultPetition
 
     let petition: String = paramPetition || "241584"
 
