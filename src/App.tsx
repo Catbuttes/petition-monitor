@@ -17,11 +17,18 @@ class App extends React.Component<any, IAppState> {
         PetitionID: "",
         DisplayCount: false
     }
+
 }
   render() {
+    let search = window.location.search;
+    let params = new URLSearchParams(search);
+    let paramPetition = params.get('petition');
+
+    let petition: String = paramPetition || "241584"
+
     return (
       <div className="App">
-        {(this.state.DisplayCount) ? undefined : <PetitionSelector submitPetitionID={this.petitionIdSubmitted}/>}
+        {(this.state.DisplayCount) ? undefined : <PetitionSelector submitPetitionID={this.petitionIdSubmitted} defaultPetition={petition}/>}
         {(this.state.DisplayCount) ? <PetitionViewer PetitionID={this.state.PetitionID} /> : undefined }
       </div>
     );
