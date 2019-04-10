@@ -4,8 +4,10 @@ import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
 import { Stack } from 'office-ui-fabric-react/lib/Stack';
 import { isUndefined } from 'util';
 
+
 export interface IPetitionSelectorProps {
     submitPetitionID: (petitionID: String) => void;
+    defaultPetition: String;
 }
 
 export interface IPetitionSelectorState {
@@ -22,7 +24,7 @@ export default class PetitionSelector extends React.Component<IPetitionSelectorP
         this._submitClicked = this._submitClicked.bind(this);
 
         this.state = {
-            PetitionID: "241584",
+            PetitionID: this.props.defaultPetition,
             ButtonDisabled: false
         }
     }
@@ -38,7 +40,7 @@ export default class PetitionSelector extends React.Component<IPetitionSelectorP
                         onGetErrorMessage={this._getErrorMessage}
                         validateOnLoad={true}
                         onChange={this._petitionIdChanged}
-                        defaultValue="241584"
+                        defaultValue={this.props.defaultPetition.toString()}
                     />
                 </Stack.Item>
                 <Stack.Item align="center">
