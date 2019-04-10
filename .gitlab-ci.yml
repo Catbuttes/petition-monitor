@@ -12,5 +12,4 @@ pages:
   artifacts:
     paths:
     - public
-  only:
-  - /^live-.*$/
+
