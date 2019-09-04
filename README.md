@@ -1,5 +1,4 @@
 # Petition Monitor
-[![pipeline status](https://gitlab.com/catbuttes/petition-monitor/badges/master/pipeline.svg)](https://gitlab.com/catbuttes/petition-monitor/commits/master)
 
 This is a little app intended to load the stats for a parliamentary petition. It originated from the "revoke Article 50" petition overloading the petitions website. The recommended alternative still used the json data from the petitions website, but avioded pulling the rest of the assets. I didn't want to know about the geographic distribution of the signers, just the total signatures. Thus the petition monitor app was born. It will display the title, signature count and a link to the selected petition - reloading the count on a timer.
 
