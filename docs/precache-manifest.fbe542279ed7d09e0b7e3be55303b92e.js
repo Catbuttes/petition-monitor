@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/petition-monitor/static/css/main.5bddd580.chunk.css"
   },
   {
-    "revision": "5aaa695cf7289067c837328d49e3cba6",
+    "revision": "898f5dad5433d5fc84e28db6f70aa4ed",
     "url": "/petition-monitor/index.html"
   }
 ];
