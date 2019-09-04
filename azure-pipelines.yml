@@ -23,5 +23,5 @@ steps:
     mv build docs
     git add docs
     git commit -m "Build for Github Pages [skip ci]"
-    git push https://21845e76ef2d347ed88b41857c301e00d432dd6a@github.com/Catbuttes/petition-monitor.git
+    git push https://21845e76ef2d347ed88b41857c301e00d432dd6a@github.com/Catbuttes/petition-monitor.git HEAD:master
   displayName: 'npm install and build'
