@@ -1,13 +1,13 @@
 {
   "main.css": "/petition-monitor/static/css/main.5bddd580.chunk.css",
-  "main.js": "/petition-monitor/static/js/main.63040313.chunk.js",
-  "main.js.map": "/petition-monitor/static/js/main.63040313.chunk.js.map",
+  "main.js": "/petition-monitor/static/js/main.eda1faae.chunk.js",
+  "main.js.map": "/petition-monitor/static/js/main.eda1faae.chunk.js.map",
   "runtime~main.js": "/petition-monitor/static/js/runtime~main.b9a1e37c.js",
   "runtime~main.js.map": "/petition-monitor/static/js/runtime~main.b9a1e37c.js.map",
   "static/js/2.ce9fd5c2.chunk.js": "/petition-monitor/static/js/2.ce9fd5c2.chunk.js",
   "static/js/2.ce9fd5c2.chunk.js.map": "/petition-monitor/static/js/2.ce9fd5c2.chunk.js.map",
   "index.html": "/petition-monitor/index.html",
-  "precache-manifest.fbe542279ed7d09e0b7e3be55303b92e.js": "/petition-monitor/precache-manifest.fbe542279ed7d09e0b7e3be55303b92e.js",
+  "precache-manifest.d02252bb35d8e6522302d2da934fc37c.js": "/petition-monitor/precache-manifest.d02252bb35d8e6522302d2da934fc37c.js",
   "service-worker.js": "/petition-monitor/service-worker.js",
   "static/css/main.5bddd580.chunk.css.map": "/petition-monitor/static/css/main.5bddd580.chunk.css.map"
 }
