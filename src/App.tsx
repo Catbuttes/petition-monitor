@@ -23,7 +23,6 @@ class App extends React.Component<IAppProps, IAppState> {
 
 }
   render() {
-    let search = window.location.search;
     let paramPetition = this.props.defaultPetition
 
     let petition: String = paramPetition || "241584"
