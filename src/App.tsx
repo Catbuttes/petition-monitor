@@ -24,7 +24,6 @@ class App extends React.Component<IAppProps, IAppState> {
 }
   render() {
     let paramPetition = this.props.defaultPetition
-
     let petition: String = paramPetition || "241584"
 
     return (
