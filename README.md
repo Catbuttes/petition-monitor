@@ -2,6 +2,7 @@
 
 [![Build Status](https://dev.azure.com/catbuttes/catbuttes/_apis/build/status/Catbuttes.petition-monitor?branchName=master)](https://dev.azure.com/catbuttes/catbuttes/_build/latest?definitionId=2&branchName=master)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/Catbuttes/petition-monitor.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Catbuttes/petition-monitor/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/Catbuttes/petition-monitor.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/Catbuttes/petition-monitor/context:javascript)
 
 This is a little app intended to load the stats for a parliamentary petition. It originated from the "revoke Article 50" petition overloading the petitions website. The recommended alternative still used the json data from the petitions website, but avioded pulling the rest of the assets. I didn't want to know about the geographic distribution of the signers, just the total signatures. Thus the petition monitor app was born. It will display the title, signature count and a link to the selected petition - reloading the count on a timer.
 
