@@ -22,6 +22,7 @@ steps:
 - script: |
     git config user.email "catbuttes@outlook.com" 
     git config user.name "Azure Pipeline Build"
+    git checkout -b publish
     npm install
     npm run build
   displayName: 'npm install and build'
@@ -31,5 +32,5 @@ steps:
     mv build docs
     git add docs
     git commit -m "Build for Github Pages [skip ci]"
-    git push https://CatButtes:$(Github_PAT)@github.com/Catbuttes/petition-monitor.git HEAD:master
+    git push https://CatButtes:$(Github_PAT)@github.com/Catbuttes/petition-monitor.git HEAD:publish
   displayName: 'Git Add and Push'
